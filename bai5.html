@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+  let money=+prompt('nhập số tiền gửi :');
+  let month=+prompt('nhập số tháng gửi :');
+  let irate=+prompt('nhập vào lãi suất hàng tháng :');
+  let interest=money;
+  let i= 1;
+  while(i<=month){
+    interest *= (1+ irate/100);
+    i++;
+  }
+  document.write(interest);
+
+</script>
